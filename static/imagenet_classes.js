@@ -1,8 +1,8 @@
 const IMAGENET_CLASSES = {
-    0: 'Dadjo from Tchad',
-    1: 'Egba from Nigeria',
-    2: 'Ife from Nigeria',
-    3: 'Ife from Nigeria - without mark',
-    4: 'Jebu from Nigeria',
-    5: 'Jebu - Crossed'
+    0: 'Egba class',
+    1: 'Dadjo class from Tchad',
+    2: 'Ife Class from Nigeria',
+    3: 'Ife from Nigeria - No mark',
+    4: 'Jebu Class - Nigeria',
+    5: 'Jebu / Six lines from Nigeria'
 }
