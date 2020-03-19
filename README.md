@@ -4,6 +4,7 @@ This is the Machine Learning application for Decoding Origins project. The model
 
 When prediction is done on an image, we will receive the top candidate and the chance of being correct in percentage. 
  -To do: show in perchantage, instead of decimal.
+ - Add a feedback function, capture image, feedback, and probably send a notification to user.
 
 The actual models are located in static > tfjs-models > mobilenet, and all two json and .bin files are requires. Previously, the models were generated in the command line, however nowadays with teachablemachine.withgoogle.com/, a new model can be generated and used to replace any model in that folder. 
 
