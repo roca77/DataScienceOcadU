@@ -18,9 +18,13 @@ let model;
 $("#predict-button").click(async function() {
     let image = $('#selected-image').get(0);
     let tensor = tf.browser.fromPixels(image)
+    .div( 127 ).sub( 1 )
     .resizeNearestNeighbor([224,224])
     .toFloat()
+    .reshape( [224, 224, 3])
     .expandDims();
+    
+    // '
 
     // More processing to be done around here
 /*
@@ -66,6 +70,6 @@ $("#predict-button").click(async function() {
 
     $("#prediction-list").empty();
     top5.forEach(function (p) {
-        $('#prediction-list').append(`<li>${p.className}: ${p.probability.toFixed(6)}</li>`);
+        $('#prediction-list').append(`<li>${p.className}: ${p.probability.toFixed(4)}</li>`);
     });
 })
